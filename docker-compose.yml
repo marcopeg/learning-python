@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  pgvector:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./.pgvector/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+  jupiter:
+    build: ./.jupiter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/usr/src/app
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - PGSTRING=${PGSTRING:-postgres://postgres:postgres@pgvector:5432/postgres}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-key}
+
+volumes:
+  pgdata:

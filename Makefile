@@ -1,18 +1,23 @@
-boot: build start logs
+# Makefile to control Docker Compose for the PostgreSQL with pg_vector setup
 
+# Start the Docker Compose services in detached mode
 start:
-	docker run --rm -d --name jupyter-notebook \
-		-p 8888:8888 \
-		-v "$$(pwd)":/usr/src/app \
-		-w /usr/src/app \
-		jupyter-notebook
+	docker-compose up -d
+	docker-compose logs -f
 
+# Stop the Docker Compose services
 stop:
-	@docker ps -q --filter name=jupyter-notebook | xargs -r docker stop
-	@docker ps -a -q --filter name=jupyter-notebook | xargs -r docker rm
+	docker-compose down
 
+# Follow the logs of the services
 logs:
-	@docker logs -f jupyter-notebook
+	docker-compose logs -f
 
-build: 
-	docker build -t jupyter-notebook .devcontainer/
+build:
+	docker-compose build
+
+restart: stop start
+reset: stop build start
+
+
+.PHONY: start stop logs
