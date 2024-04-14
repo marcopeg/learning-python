@@ -23,10 +23,10 @@ RUN ijsinstall --install=global
 ### Kernel(s) Dependencies
 ###
 
-# Install Node Dependencies
+# Node Dependencies
 RUN npm install -g pg
 
-# Install Python Dependencies
+# Python Dependencies
 RUN pip install -qU --no-cache-dir openai
 RUN pip install -qU --no-cache-dir psycopg2
 RUN pip install -qU --no-cache-dir unstructured
