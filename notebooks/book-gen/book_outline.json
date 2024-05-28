@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "title": "The Rise of the Templar Knights",
+        "introduction": "Embark on a journey through time to discover the origins and formation of the enigmatic Templar Knights.",
+        "chapters": [
+            {
+                "id": 1,
+                "title": "The Crusades Begin"
+            },
+            {
+                "id": 2,
+                "title": "Founding of the Templar Order"
+            },
+            {
+                "id": 3,
+                "title": "Early Missions and Expansion"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "The Templars: Guardians of the Holy Land",
+        "introduction": "Delve into the role of the Templar Knights as fierce warriors and protectors of the Holy Land.",
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Battle of Montgisard"
+            },
+            {
+                "id": 2,
+                "title": "Fortifications and Strategy"
+            },
+            {
+                "id": 3,
+                "title": "Influence and Power"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "The Templar Legacy and Downfall",
+        "introduction": "Uncover the mysteries and intricacies surrounding the rise, peak, and fall of the Templar Order.",
+        "chapters": [
+            {
+                "id": 1,
+                "title": "Wealth and Secrets"
+            },
+            {
+                "id": 2,
+                "title": "Persecution and Dissolution"
+            },
+            {
+                "id": 3,
+                "title": "Legacy and Modern Influence"
+            }
+        ]
+    }
+]
