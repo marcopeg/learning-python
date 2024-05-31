@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
     cmake \
     python3-dev \
     pkg-config \
+    pandoc \
     && apt-get clean
 
 # Install Node.js and NPM Kernel
@@ -57,6 +58,8 @@ RUN pip install -qU --no-cache-dir markdown
 RUN pip install -qU --no-cache-dir langchain-text-splitters
 RUN pip install -qU --no-cache-dir matplotlib
 RUN pip install -qU --no-cache-dir numpy
+RUN pip install -qU --no-cache-dir weasyprint
+RUN pip install -qU --no-cache-dir pypandoc
 
 # Node Dependencies
 # (all these dependencies will be available from the context of the app)

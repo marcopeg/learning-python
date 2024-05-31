@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:identifier opf:scheme="calibre" id="calibre_id">2</dc:identifier>
+        <dc:identifier opf:scheme="uuid" id="uuid_id">a8a43954-d913-4b4e-abf0-6b0c2282d451</dc:identifier>
+        <dc:title>JavaScript Chronicles</dc:title>
+        <dc:creator opf:file-as="ChatGPT" opf:role="aut">ChatGPT</dc:creator>
+        <dc:contributor opf:file-as="calibre" opf:role="bkp">calibre (7.11.0) [https://calibre-ebook.com]</dc:contributor>
+        <dc:date>2024-05-29T15:27:16+00:00</dc:date>
+        <dc:language>en</dc:language>
+        <meta name="calibre:timestamp" content="2024-05-29T15:55:11.610498+00:00"/>
+        <meta name="calibre:title_sort" content="JavaScript Chronicles"/>
+    </metadata>
+    <guide>
+        <reference type="cover" title="Cover" href="JavaScript Chronicles - ChatGPT.jpg"/>
+    </guide>
+</package>
