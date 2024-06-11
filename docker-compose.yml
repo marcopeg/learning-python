@@ -21,6 +21,7 @@ services:
       - JUPYTER_ENABLE_LAB=yes
       - PGSTRING=${PGSTRING:-postgres://postgres:postgres@pgvector:5432/postgres}
       - OPENAI_API_KEY=${OPENAI_API_KEY:-key}
+      - TAVILY_API_KEY=${TAVILY_API_KEY:-key}
 
 volumes:
   pgdata:

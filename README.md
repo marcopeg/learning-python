@@ -6,3 +6,9 @@ https://marcopeg.com/a-dive-into-ai/
 make start
 make stop
 ```
+
+# Homebrerw Dependencies
+
+```brew
+brew install graphviz
+```

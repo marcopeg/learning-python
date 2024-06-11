@@ -15,7 +15,11 @@ RUN apt-get install -y cmake
 RUN apt-get install -y python3-dev
 RUN apt-get install -y pkg-config
 RUN apt-get install -y pandoc
+RUN apt-get install -y graphviz
+RUN apt-get install -y graphviz-dev
+RUN apt-get install -y pkg-config
 RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/*
 
 # Install Node.js and NPM Kernel
 RUN curl -sL https://deb.nodesource.com/setup_20.x | bash - && \
@@ -63,6 +67,11 @@ RUN pip install -qU --no-cache-dir pypandoc
 RUN pip install -qU --no-cache-dir pyautogen
 RUN pip install -qU --no-cache-dir httpx
 RUN pip install -qU --no-cache-dir python-dotenv
+RUN pip install -qU --no-cache-dir langgraph
+RUN pip install -qU --no-cache-dir langchain
+RUN pip install -qU --no-cache-dir langchain_core
+RUN pip install -qU --no-cache-dir langchain_openai
+RUN pip install -qU --no-cache-dir pygraphviz
 
 
 # Node Dependencies
